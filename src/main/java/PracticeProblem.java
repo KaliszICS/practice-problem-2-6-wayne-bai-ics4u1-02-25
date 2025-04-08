@@ -47,7 +47,7 @@ public class PracticeProblem {
 			double middleMan = nums[i];
 			nums[i] = nums[minInd];
 			nums[minInd] = middleMan;
-			
+
 			swaps += 3;
 		}
 		
@@ -80,7 +80,7 @@ public class PracticeProblem {
 		int[] bubbleResult = bubbleSort(cloneArray(nums));
 		int[] selectionResult = selectionSort(cloneArray(nums));
 		int[] insertionResult = insertionSort(cloneArray(nums));
-		// Minimum default is bubble sort
+		// Compare in reverse alphabetical order to comply with "If two sorts tie for least, return the first one alphabetically"
 		int min = selectionResult[ind];
 		String minName = "Selection";
 
